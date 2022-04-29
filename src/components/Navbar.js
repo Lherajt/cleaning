@@ -1,5 +1,7 @@
 import React from 'react'
 import { Navbar as NavbarBootstrap, Nav, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhoneSquare, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 
@@ -46,22 +48,16 @@ export default function Navbar() {
             Contact Us
           </DropdownToggle>
           <DropdownMenu right>
-          {/* <DropdownItem className="text-center nav-contact-link">
-                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://twitter.com/LukasHerajt" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faTwitterSquare}></FontAwesomeIcon></a>
-              </DropdownItem>
-              <DropdownItem className="text-center">
-                <a className="h1 text-dark h-100 m-0" target="_blank" href="https://github.com/Lherajt" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faGithubSquare}></FontAwesomeIcon></a>
+          <DropdownItem className="text-center nav-contact-link">
+               
               </DropdownItem>
               <DropdownItem className="text-center">
                 <a className="h1 text-dark h-100 m-0" target="_blank" href="mailto:lherajt@gmail.com" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faEnvelopeSquare}></FontAwesomeIcon></a>
               </DropdownItem>
               <DropdownItem className="text-center">
                 <a className="h1 text-dark h-100 m-0" target="_blank" href="tel:201-640-7892" rel="noopener noreferrer"><FontAwesomeIcon className="h-100 align-middle" icon={faPhoneSquare}></FontAwesomeIcon></a>
-              </DropdownItem> */}
-            <DropdownItem divider />
-            <DropdownItem>
-              Reset
-            </DropdownItem>
+              </DropdownItem>
+           
           </DropdownMenu>
         </UncontrolledDropdown>
       </Nav>
