@@ -1,7 +1,7 @@
-// import { Button } from 'bootstrap'
-import React from 'react'
-import { Row, Container, Col, Button, ModalFooter, ModalBody, ModalHeader, Modal, Form, FormGroup, Label, Input } from 'reactstrap'
 
+import React from 'react'
+import { Row, Container, Col, Button, ModalBody, ModalHeader, Modal, Form, FormGroup, Label, Input } from 'reactstrap'
+import Bubbles from './Bubbles'
 
 
 export default function Landing() {
@@ -13,12 +13,14 @@ export default function Landing() {
             // className="align-items-top landing position-relative overflow-hidden"
             // className="m-5"
             >
+        <Bubbles />
+
                 <Col md="6" className="m-2">
-                    <h1>Cleaning</h1>
+                    <h1 className="main-header">Cleaning</h1>
 
                 </Col>
                 <Col className="m-2">
-                    <p>Quickly start development on your next project using this admin dashboard template. It's free, open-source and licensed </p>
+                    <h3 className="secondary-header">Quickly start development on your next project using this admin dashboard template. It's free, open-source and licensed </h3>
 
 
 
@@ -26,9 +28,7 @@ export default function Landing() {
                         color="info" 
                         type="button"
                         size="lg"
-                        className="text-dark shadow p-3 mb-5 rounded"
-                        // shadow={true}
-                        // bordered={true}
+                        className="text-dark shadow-lg p-3 my-3 rounded main-btn"
                         onClick={() => setModal(!modal)}
                     >
                         Free Estimate

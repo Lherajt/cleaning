@@ -8,17 +8,20 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <NavbarBootstrap
-    color="dark"
-    dark
+    color="light"
+    light
     expand="md"
     // fixed="top"
     full
+    className="Navbar"
   >
     <NavbarBrand className="p-0 my-n2">
         <Link
           to="/"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        >LOGO</Link>
+        >
+        LOGO
+        </Link>
 
       </NavbarBrand>
     <NavbarToggler onClick={function noRefCheck(){}} />
@@ -28,13 +31,19 @@ export default function Navbar() {
         navbar
       >
         <NavItem>
-          <NavLink href="/components/">
+        <NavLink>
+
+          <Link to="/">
             Home
-          </NavLink>
+          </Link>
+        </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="https://github.com/reactstrap/reactstrap">
+          <NavLink>
+          <Link to="/about">
+
             About
+          </Link>
           </NavLink>
         </NavItem>
         <UncontrolledDropdown
